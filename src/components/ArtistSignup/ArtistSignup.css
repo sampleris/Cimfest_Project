@@ -1,0 +1,42 @@
+.artist-signup {
+    width: 100%;
+    max-width: 400px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.artist-signup h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.artist-signup label {
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.artist-signup input,
+.artist-signup select {
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 0.25rem;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+.artist-signup button {
+    width: 100%;
+    padding: 0.75rem;
+    margin-top: 1rem;
+    background-color: #333;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+}
+
+
+

@@ -1,0 +1,37 @@
+.investor-dashboard {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background-color: #fafafa;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.investor-dashboard h2 {
+    text-align: center;
+    color: #8e44ad;
+    margin-bottom: 20px;
+}
+
+.dashboard-section {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.dashboard-btn {
+    padding: 10px 20px;
+    background-color: #9b59b6;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.dashboard-btn:hover {
+    background-color: #8e44ad;
+}
+

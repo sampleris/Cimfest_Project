@@ -1,0 +1,168 @@
+/* General Layout */
+.app-container {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  background-color: #f0f4f7;
+  font-family: Arial, sans-serif;
+}
+
+.left-navbar {
+  width: 12%;
+  background-color: #1e3a8a;  /* Navy blue */
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.left-navbar button {
+  margin: 10px;
+  padding: 10px 20px;
+  background-color: #3b82f6; /* Blue */
+  border: none;
+  border-radius: 5px;
+  color: white;
+  width: 80%;
+  font-size: 16px;
+  
+  cursor: pointer;
+}
+
+.left-navbar button:hover {
+  background-color: #60a5fa;
+}
+
+.top-navbar {
+  display: flex;
+  gap: 5%;
+  justify-content: flex-end;
+  background-color: #1e3a8a;
+  padding: 10px;
+  color: white;
+  width: 83vw;
+  z-index: 3;
+  margin-top: -4.6%;
+  margin-left: 17%;
+  
+  
+}
+
+.top-navbar button {
+  padding: 10px 20px;
+  background-color: #3b82f6;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.top-navbar button:hover {
+  background-color: #60a5fa;
+}
+
+/* Content Area */
+.content {
+  width: 73%;
+  display: flex;
+  flex-direction: column;
+  z-index: 10;
+}
+
+.main-content {
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  height: calc(100vh - 100px); /* Adjust for navbar height */
+  overflow-y: auto;
+
+}
+
+/* Right Pop-up Space */
+.right-space {
+  width: 15%;
+  background-color: #f9fafb;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-left: 2px solid #e5e7eb;
+}
+
+.right-space h3 {
+  color: #1e3a8a;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1200px) {
+  .app-container {
+    flex-direction: column;
+  }
+
+  .left-navbar, .right-space {
+    width: 100%;
+    flex-direction: row;
+  }
+
+  .content {
+    width: 100%;
+  }
+}
+
+
+/* SellDrug Component */
+
+.message {
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px 20px;
+  border-radius: 5px;
+  color:rgb(78, 77, 77);
+  font-weight: bold;
+  background-color: rgba(16, 250, 16, 0.6);
+  z-index: 1000;
+  clip-path: polygon(
+    0 5%, 5% 0, 10% 5%, 15% 0, 20% 5%, 25% 0, 
+    30% 5%, 35% 0, 40% 5%, 45% 0, 50% 5%, 
+    55% 0, 60% 5%, 65% 0, 70% 5%, 75% 0, 
+    80% 5%, 85% 0, 90% 5%, 95% 0, 100% 5%, 
+    100% 95%, 95% 100%, 90% 95%, 85% 100%, 
+    80% 95%, 75% 100%, 70% 95%, 65% 100%, 
+    60% 95%, 55% 100%, 50% 95%, 45% 100%, 
+    40% 95%, 35% 100%, 30% 95%, 25% 100%, 
+    20% 95%, 15% 100%, 10% 95%, 5% 100%, 0 95%
+    
+  );
+  /*animation: fadeOut 8s forwards; /*Optional fade out effect */
+}
+
+.message.success {
+  background-color: #4CAF50; /* Green for success */
+}
+
+.message.error {
+  background-color: #f44336; /* Red for error */
+}
+
+/* Optional: Fade-out animation */
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+
+
+
+
+
+
+
